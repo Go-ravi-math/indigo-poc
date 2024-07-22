@@ -1,0 +1,102 @@
+.job-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    // background-color: #f9f9f9;
+    // border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 28px 16px #1314190a;
+    background-color: white;
+
+    // height: 118px;
+  
+    &__icon {
+        font-size: 24px;
+        color: #007bff;
+        width: 42px;
+        height: 34px;
+        padding-top: 5px;
+        background-color: #EAF8FF;
+        border-radius: 100px;
+        margin-right: 10px;
+    }
+  
+    &__details {
+      flex-grow: 1;
+      padding-left: 15px;
+    }
+
+    &__position {
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0;
+        color: #333;
+        weight: 400;
+        width: 90%;
+        text-align: left;
+
+        h3, h4{
+            margin: 0;
+        }
+
+        h4 {
+            font-weight: 300;
+            color: #6B7280;
+        }
+      }
+
+    &__top {
+        display: flex;
+        padding: 5px;
+        border-bottom:1px solid rgb(228, 227, 227);
+    }
+  
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px;
+
+        &__info {
+            flex: 1;
+            align-items: center;
+            font-size: 0.875rem;
+            color: #555;
+            margin: 4px 0;
+            
+            &:not(:last-child) {
+                border-right: 1px solid rgb(192, 190, 190);
+            }
+      
+            & > svg {
+              margin-right: 5px;
+            }
+          }
+    }
+    &__actions {
+      flex: 0 0 24px;
+    //   display: flex;
+    //   align-items: center;
+    margin-left: auto;
+  
+      &__share-icon {
+        font-size: 24px;
+        color: #007bff;
+        cursor: pointer;
+      }
+    }
+
+    .view-details{
+        background-color: #000099;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 50px;
+      float: right;
+      margin-right: 10px;  
+      width: 125px;
+    }
+  }
+  

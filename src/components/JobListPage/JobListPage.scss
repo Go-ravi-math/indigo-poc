@@ -1,0 +1,103 @@
+.job-detail-page {
+    margin-top: 20px;
+
+    &__header {
+      position: relative;
+      margin-bottom: 20px;
+  
+      &__banner-image {
+        width: 100%;
+        object-fit: cover;
+        height: 550px;
+      }
+    }
+  
+    &__content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+
+      &__title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+  
+      &__actions {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+  
+        &__apply-button,
+        &__share-button {
+            background-color: #000099;
+            color: #000099;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            float: left;
+            margin-right: 10px;
+        }
+      }
+  
+      &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+  
+        & p {
+          font-size: 1rem;
+          color: #555;
+  
+          & strong {
+            color: #333;
+          }
+        }
+      }
+    }
+
+    &__apply, 
+    &__share{
+        &-button {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            float: left;
+            margin-right: 10px;
+        }
+    }
+
+    &__apply-button{
+        background-color: #000099;
+        color: white;
+        border: 2px solid #000099;
+    }
+
+    &__share-button{
+        background-color: white;
+        color: #000099;
+        border: 1px solid #000099;
+    }
+
+
+
+    .icon {
+        font-size: 26px;
+        color: #007bff;
+        width: 42px;
+        height: 34px;
+        padding: 6px;
+        background-color: #EAF8FF;
+        border-radius: 100px;
+        margin-right: 10px;
+    
+    }
+  }
+  
