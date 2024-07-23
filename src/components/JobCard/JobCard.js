@@ -4,7 +4,7 @@ import { FaCalendarAlt, FaMapMarkerAlt, FaBriefcase } from 'react-icons/fa';
 import { MdShare } from 'react-icons/md';
 
 const JobCard = ({id, onClick, position, date, location, openings, from }) => {
-    const handleClick = (id) => {
+    const handleClick = () => {
         if (onClick) {
           onClick(id);  // Pass the id to the onClick handler
         }

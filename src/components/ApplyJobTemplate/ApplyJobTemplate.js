@@ -3,9 +3,15 @@ import { useParams } from 'react-router-dom';
 import './ApplyJobTemplate.scss';
 import { FaCalendarAlt, FaMapMarkerAlt, FaBriefcase } from 'react-icons/fa';
 import { MdShare } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 const ApplyJobTemplate = () => {
+    const navigate = useNavigate();
   const { id } = useParams();
+
+  const handlesubmit = () => {
+    navigate(`/SumbitApp`);
+  };
 
   // Fetch job details based on id if needed
   // For demonstration, we'll use static data
@@ -334,7 +340,7 @@ const ApplyJobTemplate = () => {
         </button> */}
 
         <button className="cancel-button">Cancel</button>
-        <button className="submit-button">Submit</button>
+        <button className="submit-button" onClick={handlesubmit}>Submit</button>
       </section>
     </form>
     </>
